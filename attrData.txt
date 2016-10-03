@@ -1,0 +1,37 @@
+% enter alternatives and attribute tree in the following format below:
+%    $
+%    T1
+%    T2
+%    ...
+%    ~
+%
+%    $
+%    A1 1         where first level of attributes has no prefix '-'      eg atttibute tree is :
+%    A2 1                                                                         Root
+%    -A21 1       second level have 1 prefix '-'                            _______ |________
+%    -A22 0                                                                A1      A2       A3 ...
+%    --A221 1     third level has 2 prefix '-'                                    __|__
+%    --A222 0     ... etc                                                        A21  A22
+%    A3 0                                                                            __|____
+%    ...          indicate 1/0 after attribute name.                               A221   A222 ...
+%    ~            1 = qualitative, 0 = quantitative
+%
+
+% ALTERNATIVES
+
+$
+car
+cycle
+~
+
+% ATTRIBUTE TREE
+
+$
+comfort 1
+fuel 0
+cost 0
+pollution 1
+time 0
+~
+
+

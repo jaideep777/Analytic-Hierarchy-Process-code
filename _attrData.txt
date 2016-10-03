@@ -1,0 +1,58 @@
+% enter alternatives and attribute tree in the following format below:
+%    $
+%    T1
+%    T2
+%    ...
+%    ~
+%
+%    $
+%    A1 1         where first level of attributes has no prefix '-'      eg atttibute tree is :
+%    A2 1                                                                         Root
+%    -A21 1       second level have 1 prefix '-'                            _______ |________
+%    -A22 0                                                                A1      A2       A3 ...
+%    --A221 1     third level has 2 prefix '-'                                    __|__
+%    --A222 0     ... etc                                                        A21  A22
+%    A3 0                                                                            __|____
+%    ...          indicate 1/0 after attribute name.                               A221   A222 ...
+%    ~            1 = qualitative, 0 = quantitative
+%
+
+% ALTERNATIVES
+
+$
+phd ecology
+phd elec + phd ecology
+phd ecology US
+elec MS + phd ecology IN
+job + phd ecology
+job + phd elec + phd ecology
+job + elec MS + phd ecology IN
+job + phd ecology US
+~
+
+% ATTRIBUTE TREE
+
+$
+explore 1
+-traditional tech 1
+-traditional knowledge in ecology 1
+-traditional organic farming 1
+ease of switch to ecology 1
+-use of knowledge gained 1
+-ease of coming back to basics 1
+co-culture 1
+level 1
+-level of co-students 1
+-level of research 1
+-potential usage 0
+exposure 1
+liking 1
+-liking of subject 1
+-sustenance of interest in education 1
+earning 0
+-earning in next 2 yrs 0
+-earning by age 30 0
+age 0
+~
+
+
